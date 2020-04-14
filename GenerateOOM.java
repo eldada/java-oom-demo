@@ -10,7 +10,7 @@ public class GenerateOOM {
         int iteratorValue = 20;
         System.out.println("\n=================> OOM test started..\n");
         for (int i = 1; i < 20; i++) {
-            System.out.println("Iteration " + i + " Free Mem: " + Runtime.getRuntime().freeMemory());
+            System.out.println("\nIteration " + i + " Free Mem: " + Runtime.getRuntime().freeMemory());
 
             int loop1 = 2;
             int[] memoryFillIntVar = new int[iteratorValue];
@@ -22,7 +22,7 @@ public class GenerateOOM {
             } while (loop1 > 0);
 
             iteratorValue = iteratorValue * 10;
-            System.out.println("\nRequired Memory for next loop: " + iteratorValue);
+            System.out.println("Required Memory for next loop: " + iteratorValue);
             Thread.sleep(1000);
         }
     }
